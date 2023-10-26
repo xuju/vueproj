@@ -3,6 +3,7 @@ import {createPinia} from 'pinia'
 import '@/style.css'
 import '@/common.scss'
 import 'virtual:windi.css'
+import '@/polyfill/polyfill'
 import App from '@/App.vue'
 import router from '@/router/index'
 
