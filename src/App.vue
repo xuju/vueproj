@@ -7,12 +7,11 @@
 // function changename() : void {
 //   store.name = 'new name'
 // }
-
 </script>
 
 <template>
-  <RouterView/>
-  <!-- <Button type="primary" @click="changename">{{store.name}}</Button>
+	<RouterView />
+	<!-- <Button type="primary" @click="changename">{{store.name}}</Button>
   <div class="text-pink-500">text windicss</div>
   <div>
     <a href="https://vitejs.dev" target="_blank">
