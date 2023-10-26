@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import { Button } from 'ant-design-vue'
+import {useStore} from './store/index'
+
+const store = useStore()
+function changename() : void {
+  store.name = 'new name'
+}
+
 </script>
 
 <template>
-  <Button type="primary">button</Button>
+  <Button type="primary" @click="changename">{{store.name}}</Button>
   <div class="text-pink-500">text windicss</div>
   <div>
     <a href="https://vitejs.dev" target="_blank">
