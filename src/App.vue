@@ -1,17 +1,18 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import { Button } from 'ant-design-vue'
-import {useStore} from './store/index'
+// import HelloWorld from './components/HelloWorld.vue'
+// import { Button } from 'ant-design-vue'
+// import {useStore} from './store/index'
 
-const store = useStore()
-function changename() : void {
-  store.name = 'new name'
-}
+// const store = useStore()
+// function changename() : void {
+//   store.name = 'new name'
+// }
 
 </script>
 
 <template>
-  <Button type="primary" @click="changename">{{store.name}}</Button>
+  <RouterView/>
+  <!-- <Button type="primary" @click="changename">{{store.name}}</Button>
   <div class="text-pink-500">text windicss</div>
   <div>
     <a href="https://vitejs.dev" target="_blank">
@@ -21,20 +22,21 @@ function changename() : void {
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
+<!-- <style scoped> -->
+<style lang="scss">
+// .logo {
+//   height: 6em;
+//   padding: 1.5em;
+//   will-change: filter;
+//   transition: filter 300ms;
+// }
+// .logo:hover {
+//   filter: drop-shadow(0 0 2em #646cffaa);
+// }
+// .logo.vue:hover {
+//   filter: drop-shadow(0 0 2em #42b883aa);
+// }
 </style>
