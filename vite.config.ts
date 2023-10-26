@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import autoprefixer from 'autoprefixer'
+import Windicss from 'vite-plugin-windicss'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -9,5 +10,5 @@ export default defineConfig({
       plugins:[autoprefixer({overrideBrowserslist:['chrome > 40','ff > 31','ie 11']})],
     }
   },
-  plugins: [vue()],
+  plugins: [vue(),Windicss()],
 })
