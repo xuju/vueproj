@@ -7,7 +7,7 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "moduleResolution": "Node",//"node" 表示 模块化查找的时候按照nodejs方式进行查找。"moduleResolution": "bundler" 表示 打包工具的模块解析策略来查找
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,

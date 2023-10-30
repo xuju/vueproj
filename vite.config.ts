@@ -7,6 +7,8 @@ import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 import { resolve } from 'path'
 import legacy from '@vitejs/plugin-legacy'
 
+const IS_DEV = process.env.VUE_APP_CURRENTMODE === 'development'
+
 // https://vitejs.dev/config/
 export default defineConfig({
 	css: {
@@ -28,7 +30,7 @@ export default defineConfig({
 		Components({
 			resolvers: [
 				AntDesignVueResolver({
-					importStyle: false,
+					importStyle: IS_DEV ? false : 'less',
 				}),
 			],
 		}),
